@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:oua_app48/main.dart';
 
@@ -9,7 +8,7 @@ class Kayit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Profil Oluştur',
+      title: 'Kaydol',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -42,7 +41,7 @@ class ProfileCreateScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Profil Oluştur',
+          'Kaydol',
           style: GoogleFonts.gabarito(),
         ),
         centerTitle: true,
@@ -51,9 +50,7 @@ class ProfileCreateScreen extends StatelessWidget {
           onPressed: () {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(
-                  builder: (context) =>
-                      const MyApp()), // Main, main.dart dosyasındaki ana widget'ınızdır.
+              MaterialPageRoute(builder: (context) => const MyApp()),
             );
           },
         ),
@@ -64,13 +61,27 @@ class ProfileCreateScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              const CircleAvatar(
-                radius: 50,
-                backgroundColor: Colors.grey,
-                child: Icon(
-                  Icons.person,
-                  size: 50,
-                  color: Colors.black,
+              Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color:
+                          const Color.fromARGB(255, 255, 0, 0).withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 5,
+                      offset: const Offset(0, 3),
+                    ),
+                  ],
+                ),
+                child: const CircleAvatar(
+                  radius: 50,
+                  backgroundColor: Color.fromARGB(255, 255, 255, 255),
+                  child: Icon(
+                    Icons.person,
+                    size: 50,
+                    color: Colors.black,
+                  ),
                 ),
               ),
               const SizedBox(height: 70),
@@ -136,7 +147,7 @@ class ProfileCreateScreen extends StatelessWidget {
                   backgroundColor: Colors.red,
                 ),
                 child: Text(
-                  'Devam Et',
+                  'Hesap Oluştur',
                   style: GoogleFonts.gabarito(
                     color: Colors.white,
                   ),

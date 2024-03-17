@@ -63,13 +63,24 @@ class ProfileCreateScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              const CircleAvatar(
-                radius: 50,
-                backgroundColor: Colors.grey,
-                child: Icon(
-                  Icons.person,
-                  size: 50,
-                  color: Colors.black,
+              Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color.fromARGB(255, 233, 215, 215)
+                          .withOpacity(0.5),
+                      spreadRadius: 5,
+                      blurRadius: 5,
+                      offset: const Offset(0, 3),
+                    ),
+                  ],
+                ),
+                child: CircleAvatar(
+                  radius: 50,
+                  backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+                  child: Image.asset(
+                      'assets/images/logo.png'),
                 ),
               ),
               const SizedBox(height: 70),
@@ -135,7 +146,7 @@ class ProfileCreateScreen extends StatelessWidget {
                   backgroundColor: Colors.red,
                 ),
                 child: Text(
-                  'Devam Et',
+                  'Giriş Yap',
                   style: GoogleFonts.gabarito(
                     color: Colors.white,
                   ),
@@ -149,13 +160,11 @@ class ProfileCreateScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            const Kayit()),
+                    MaterialPageRoute(builder: (context) => const Kayit()),
                   );
                 },
                 child: const Text(
-                  'Hesabın yok mu? Hesap oluştur',
+                  'Hesabın yok mu? Hemen bir tane oluştur',
                   style: TextStyle(color: Colors.blue),
                 ),
               ),
