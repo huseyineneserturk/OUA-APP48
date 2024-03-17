@@ -1,19 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:oua_app48/kayit.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Kayit extends StatelessWidget {
+  const Kayit({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Giriş Yap',
+      title: 'Profil Oluştur',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -143,21 +138,6 @@ class ProfileCreateScreen extends StatelessWidget {
                 onPressed: () {
                   // Devam et denildiğinde yapılacak işlem.
                 },
-              ),
-              const SizedBox(height: 16),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            const Kayit()),
-                  );
-                },
-                child: const Text(
-                  'Hesabın yok mu? Hesap oluştur',
-                  style: TextStyle(color: Colors.blue),
-                ),
               ),
             ],
           ),
