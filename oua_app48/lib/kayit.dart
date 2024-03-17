@@ -89,6 +89,10 @@ class ProfileCreateScreen extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: 'Kullanıcı Adı',
                   labelStyle: GoogleFonts.gabarito(),
+                  prefixIcon: const Icon(
+                    Icons.person,
+                    color: Colors.grey,
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
@@ -99,6 +103,10 @@ class ProfileCreateScreen extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: 'E-posta veya Telefon Numarası',
                   labelStyle: GoogleFonts.gabarito(),
+                  prefixIcon: const Icon(
+                    Icons.mail,
+                    color: Colors.grey,
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
@@ -110,6 +118,10 @@ class ProfileCreateScreen extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: 'Şifre',
                   labelStyle: GoogleFonts.gabarito(),
+                  prefixIcon: const Icon(
+                    Icons.lock,
+                    color: Colors.grey,
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),

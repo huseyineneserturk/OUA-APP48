@@ -79,8 +79,7 @@ class ProfileCreateScreen extends StatelessWidget {
                 child: CircleAvatar(
                   radius: 50,
                   backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-                  child: Image.asset(
-                      'assets/images/logo.png'),
+                  child: Image.asset('assets/images/logo.png'),
                 ),
               ),
               const SizedBox(height: 70),
@@ -88,6 +87,10 @@ class ProfileCreateScreen extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: 'Kullanıcı Adı',
                   labelStyle: GoogleFonts.gabarito(),
+                  prefixIcon: const Icon(
+                    Icons.person,
+                    color: Colors.grey,
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
@@ -98,6 +101,10 @@ class ProfileCreateScreen extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: 'E-posta veya Telefon Numarası',
                   labelStyle: GoogleFonts.gabarito(),
+                  prefixIcon: const Icon(
+                    Icons.mail,
+                    color: Colors.grey,
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
@@ -109,6 +116,10 @@ class ProfileCreateScreen extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: 'Şifre',
                   labelStyle: GoogleFonts.gabarito(),
+                  prefixIcon: const Icon(
+                    Icons.lock,
+                    color: Colors.grey,
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
@@ -163,9 +174,9 @@ class ProfileCreateScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const Kayit()),
                   );
                 },
-                child: const Text(
+                child: Text(
                   'Hesabın yok mu? Hemen bir tane oluştur',
-                  style: TextStyle(color: Colors.blue),
+                  style: GoogleFonts.robotoFlex(color: Colors.blue),
                 ),
               ),
             ],
