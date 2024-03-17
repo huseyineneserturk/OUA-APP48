@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:oua_app48/main.dart';
 
 class Kayit extends StatelessWidget {
   const Kayit({super.key});
@@ -48,7 +49,12 @@ class ProfileCreateScreen extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.close),
           onPressed: () {
-            SystemNavigator.pop();
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                  builder: (context) =>
+                      const MyApp()), // Main, main.dart dosyasındaki ana widget'ınızdır.
+            );
           },
         ),
       ),

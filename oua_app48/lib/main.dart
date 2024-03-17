@@ -46,7 +46,7 @@ class ProfileCreateScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Profil Oluştur',
+          'Giriş Yap',
           style: GoogleFonts.gabarito(),
         ),
         centerTitle: true,
@@ -103,7 +103,7 @@ class ProfileCreateScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 120),
+              const SizedBox(height: 90),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(400, 50),
@@ -119,7 +119,7 @@ class ProfileCreateScreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Text(
-                        'Google ile Kaydolun',
+                        'Google ile Giriş Yap',
                         style: GoogleFonts.gabarito(
                           color: const Color.fromARGB(255, 0, 0, 0),
                         ),
@@ -144,7 +144,7 @@ class ProfileCreateScreen extends StatelessWidget {
                   // Devam et denildiğinde yapılacak işlem.
                 },
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 10),
               TextButton(
                 onPressed: () {
                   Navigator.push(
