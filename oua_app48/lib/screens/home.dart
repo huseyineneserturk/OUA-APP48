@@ -11,8 +11,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 236, 100, 79),
-        title:  Text(
+        backgroundColor: const Color.fromARGB(255, 236, 100, 79),
+        title: Text(
           'SayCheese',
           style: GoogleFonts.aBeeZee(
             color: const Color.fromARGB(255, 255, 255, 255),
@@ -65,23 +65,35 @@ class HomePage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height / 8,
+              height: MediaQuery.of(context).size.height / 18,
             ),
-            Container(
+            SizedBox(
               width: MediaQuery.of(context).size.width / 1.2,
               height: MediaQuery.of(context).size.height / 4,
               child: const GoogleMapWidget(),
             ),
             const SizedBox(height: 25.0),
+            Text(
+              'Yakınızdaki konumları keşfedin.',
+              style: GoogleFonts.gabarito(
+                color: const Color.fromARGB(252, 90, 86, 86),
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 18.0),
             SizedBox(
-              height: 100,
+              height: 150,
+              width: 100,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
                   // Önerilen lokasyonlar için örnek Container'lar
-                  buildRecommendedLocation('Örnek Lokasyon 1'),
-                  buildRecommendedLocation('Örnek Lokasyon 2'),
-                  buildRecommendedLocation('Örnek Lokasyon 3'),
+                  buildRecommendedLocation(
+                      'Mecidiye Camii', 'assets/images/konum1.png'),
+                  buildRecommendedLocation(
+                      'Kız Kulesi', 'assets/images/konum2.png'),
+                  buildRecommendedLocation(
+                      'Aziz Stephen', 'assets/images/konum3.png'),
                 ],
               ),
             ),
@@ -91,12 +103,14 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Widget buildRecommendedLocation(String locationName) {
+  Widget buildRecommendedLocation(String locationName, String assetName) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 8.0),
-      padding: const EdgeInsets.all(8.0),
+      height: 200,
+      width: 200,
+      margin: const EdgeInsets.symmetric(horizontal: 1.0),
+      padding: const EdgeInsets.all(4.0),
       decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 251, 69, 69),
+        image: DecorationImage(image: AssetImage(assetName)),
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Center(

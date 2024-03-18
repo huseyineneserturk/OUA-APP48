@@ -13,30 +13,70 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 251, 242, 242),
-        appBar: AppBar(
-          title: Text(
-            "Profil",
-            style: GoogleFonts.gabarito(),
-          ),
-          backgroundColor: const Color.fromARGB(255, 255, 236, 233),
+      appBar: AppBar(
+        title: Text(
+          "Profil",
+          style: GoogleFonts.gabarito(),
         ),
-        body: Container(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
-          color: const Color.fromARGB(255, 255, 236, 233),
-          padding: const EdgeInsets.fromLTRB(20, 30, 20, 30),
+        backgroundColor: const Color.fromARGB(255, 255, 236, 233),
+      ),
+      body: Center(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(20),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-             const SizedBox(
-                height: 35,
-              ),
-              CircleAvatar(
+              const SizedBox(height: 20),
+              const CircleAvatar(
                 radius: 80,
-                backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-                child: Image.asset('assets/images/logo.png'),
+                backgroundColor: Color.fromARGB(255, 255, 255, 255),
+                backgroundImage: AssetImage('assets/images/profile_photo.png'),
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                'Kullanıcı Adı',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                'kullanici@mail.com',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.grey[600],
+                ),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  // Düzenleme butonuna tıklama işlevi
+                },
+                child: const Text(
+                  'Profili Düzenle',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 236, 100, 79),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              OutlinedButton(
+                onPressed: () {
+                  // Çıkış yapma işlevi
+                },
+                child: const Text(
+                  'Çıkış Yap',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 236, 100, 79),
+                  ),
+                ),
               ),
             ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

@@ -13,16 +13,16 @@ class FavoritesPage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          _buildFavoriteItem('Fotoğrafçı Adı 1'),
-          _buildFavoriteItem('Fotoğrafçı Adı 2'),
-          _buildFavoriteItem('Fotoğrafçı Adı 3'),
+          _buildFavoriteItem('Zeynep Çelik', 'assets/images/insan1.png'),
+          _buildFavoriteItem('Hüseyin Yıldız', 'assets/images/insan2.png'),
+          _buildFavoriteItem('Ahmet Kocaman', 'assets/images/insan3.png'),
           // Favorilere eklenmiş diğer fotoğrafçılar için örnekler
         ],
       ),
     );
   }
 
-  Widget _buildFavoriteItem(String photographerName) {
+  Widget _buildFavoriteItem(String photographerName, String imagePath) {
     return ListTile(
       title: Text(
         photographerName,
@@ -32,12 +32,10 @@ class FavoritesPage extends StatelessWidget {
         'Favorilere Eklendi',
         style: GoogleFonts.gabarito(),
       ),
-      leading: const CircleAvatar(
-        child: Icon(Icons.person),
+      leading: CircleAvatar(
+        backgroundImage: AssetImage(imagePath),
+         radius: 30,
       ),
-      onTap: () {
-        // Fotoğrafçıya tıklanıldığında yapılacak işlemler
-      },
     );
   }
 }
