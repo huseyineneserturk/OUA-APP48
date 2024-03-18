@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:oua_app48/screens/chat.dart';
 import 'package:oua_app48/screens/favorites.dart';
 import 'package:oua_app48/screens/home.dart';
+import 'package:oua_app48/screens/profile.dart';
 
 
 class TabsScreen extends StatefulWidget {
@@ -20,7 +21,7 @@ class _TabsScreenState extends State<TabsScreen> {
     const HomePage(),
     const FavoritesPage(),
     const ChatPage(),
-    const Text('Profil'),
+    const ProfileScreen(),
   ];
 
   void _selectPage(int index) {
@@ -42,6 +43,10 @@ class _TabsScreenState extends State<TabsScreen> {
      if (_selectedPageIndex == 2) {
       activePage = const ChatPage();
       activePageTitle = 'Mesajlaşma';
+    }
+    if (_selectedPageIndex == 3) {
+      activePage = const ProfileScreen();
+      activePageTitle = 'Profil';
     }
 
     return Scaffold(
