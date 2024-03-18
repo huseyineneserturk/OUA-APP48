@@ -49,15 +49,27 @@ class ChatPage extends StatelessWidget {
 
   Widget _buildMessageItem(int index) {
     // Örnek mesajlar için rastgele veri oluşturulabilir
-    final String sender = index.isEven ? 'Ben' : 'Karşı taraf';
+    final String sender = index.isEven ? 'Ben' : 'Zeynep Çelik';
     final String message = 'Örnek mesaj $index';
 
-    return ListTile(
+    if(sender == 'Ben'){
+      return ListTile(
       title: Text(sender),
       subtitle: Text(message),
-      leading: CircleAvatar(
-        child: Text(sender[0]), // İlk harfi göstermek için
+      leading: const CircleAvatar(
+       backgroundImage: AssetImage('assets/images/profile_photo.png'),// İlk harfi göstermek için
       ),
     );
+    }
+    else{
+      return ListTile(
+      title: Text(sender),
+      subtitle: Text(message),
+      leading: const CircleAvatar(
+        backgroundImage: AssetImage('assets/images/insan1.png'), // İlk harfi göstermek için
+      ),
+    );
+    }
+    
   }
 }
