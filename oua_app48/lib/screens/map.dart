@@ -76,8 +76,8 @@ class _GoogleMapWidgetState extends State<GoogleMapWidget> {
       child: GoogleMap(
         onMapCreated: _onMapCreated,
         initialCameraPosition: CameraPosition(
-          target: LatLng(40.12,14.32),
-          zoom: 12,
+          target: LatLng(41.058921, 29.043121),
+          zoom: 10,
         ),
       ),
     );

@@ -21,12 +21,12 @@ class HomePage extends StatelessWidget {
               }),
         ],
       ),
-      body: SingleChildScrollView(
+      body: Container(
+        padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              padding: EdgeInsets.all(16.0),
               child: TextField(
                 decoration: InputDecoration(
                   fillColor: Colors.grey,
@@ -38,31 +38,13 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              color: Colors.red,
-              width: MediaQuery.of(context).size.width/1.2,
-              height: MediaQuery.of(context).size.height/6,
-              child: GoogleMapWidget(),
+            SizedBox(
+              height: MediaQuery.of(context).size.height/30,
             ),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) =>  const NotificationsPage()),
-                );
-                // Haritalardan bir lokasyon seçmek için yapılacak işlemler
-              },
-              child: Container(
-                height: 200,
-                margin: const EdgeInsets.symmetric(horizontal: 16.0),
-                decoration: BoxDecoration(
-                  color: Colors.grey[300],
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-                child: const Center(
-                  child: Text('Haritadan Lokasyon Seç'),
-                ),
-              ),
+            Container(
+              width: MediaQuery.of(context).size.width/1.2,
+              height: MediaQuery.of(context).size.height/4,
+              child: GoogleMapWidget(),
             ),
             const SizedBox(height: 16.0),
             SizedBox(
