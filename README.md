@@ -4,10 +4,10 @@ Oyun ve Uygulama Akademisi Game And App Jam etkinliği kapsamında üç gün iç
 
 📸 SayCheese uygulaması, turistik bölgelerde fotoğraf çekilmek isteyen gezginler ve fotoğrafçılar için mükemmel bir platformdur. İşte neden bu uygulamayı kullanmalısınız:
 
- > Anında Fotoğrafçı Bulun: Yolda yürürken veya turistik bir mekanda aniden bir fotoğraf çektirmek istediğinizde, uygulamamız size en yakın amatör veya profesyonel fotoğrafçıları gösterir. Sadece birkaç tıklama ile anı yakalayın!
- > Uygun Fiyatlar: Hem siz anınızı yakalarsınız hem de fotoğrafçılar kazanç elde eder.
- > Kullanıcı İncelemeleri: Uygulamamızda fotoğrafçıların kullanıcı incelemelerini okuyabilirsiniz. Diğer gezginlerin deneyimleri, doğru fotoğrafçıyı seçmenize yardımcı olur.
- > Güvenlik ve Ödeme Kolaylığı: Uygulamamız, güvenli ödeme yöntemleriyle çalışır ve kullanıcılar arasında iletişimi kolaylaştırır.
+  Anında Fotoğrafçı Bulun: Yolda yürürken veya turistik bir mekanda aniden bir fotoğraf çektirmek istediğinizde, uygulamamız size en yakın amatör veya profesyonel fotoğrafçıları gösterir. Sadece birkaç tıklama ile anı yakalayın!
+  Uygun Fiyatlar: Hem siz anınızı yakalarsınız hem de fotoğrafçılar kazanç elde eder.
+  Kullanıcı İncelemeleri: Uygulamamızda fotoğrafçıların kullanıcı incelemelerini okuyabilirsiniz. Diğer gezginlerin deneyimleri, doğru fotoğrafçıyı seçmenize yardımcı olur.
+  Güvenlik ve Ödeme Kolaylığı: Uygulamamız, güvenli ödeme yöntemleriyle çalışır ve kullanıcılar arasında iletişimi kolaylaştırır.
 
 İndirme Bağlantısı
 
