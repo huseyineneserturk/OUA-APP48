@@ -1,4 +1,4 @@
-Oyun ve Uygulama Akademisi Game And App Jam etkinliği kapsamında üç gün içerisinde geliştirmiş olduğumuz "SayCheese" adlı proje.
+Oyun ve Uygulama Akademisi Game And App Jam etkinliği kapsamında üç gün içerisinde geliştirmiş olduğumuz "SayCheese" adlı taslak uygulama.
 
 İçerik :
 
