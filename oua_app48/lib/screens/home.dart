@@ -10,6 +10,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 255, 236, 233),
         title: const Text('SayCheese'),
         actions: [
           IconButton(
@@ -30,6 +31,17 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Container(
+        decoration: const BoxDecoration(
+          // gradient: LinearGradient(
+          //       begin: Alignment.topRight,
+          //       end: Alignment.bottomLeft,
+          //       colors: [
+          //         thirdPalette1,
+          //         thirdPalette2,
+          //       ],
+          //     )
+          color: Color.fromARGB(255, 255, 236, 233)
+        ),
         padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
