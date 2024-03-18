@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:oua_app48/kayit.dart';
+import 'package:oua_app48/screens/tab.dart';
 
 class LogIn extends StatelessWidget {
   const LogIn({super.key});
@@ -159,7 +160,12 @@ class ProfileCreateScreen extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  // Devam et denildiğinde yapılacak işlem.
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const TabsScreen(),
+                    ),
+                  );
                 },
               ),
               const SizedBox(height: 10),

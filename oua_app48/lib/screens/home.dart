@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:oua_app48/screens/map.dart';
 import 'package:oua_app48/screens/notification.dart';
 
@@ -16,9 +17,16 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const NotificationsPage()),
+                  MaterialPageRoute(
+                      builder: (context) => const NotificationsPage()),
                 );
               }),
+          IconButton(
+            icon: const Icon(Icons.exit_to_app), // çıkış ikonu
+            onPressed: () {
+              SystemNavigator.pop(); // uygulamayı kapatır
+            },
+          ),
         ],
       ),
       body: Container(
@@ -33,17 +41,16 @@ class HomePage extends StatelessWidget {
                   hintText: 'Lokasyon ara...',
                   prefixIcon: Icon(Icons.search),
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(15)
-                  ),
+                      borderRadius: BorderRadius.circular(15)),
                 ),
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height/30,
+              height: MediaQuery.of(context).size.height / 30,
             ),
             Container(
-              width: MediaQuery.of(context).size.width/1.2,
-              height: MediaQuery.of(context).size.height/4,
+              width: MediaQuery.of(context).size.width / 1.2,
+              height: MediaQuery.of(context).size.height / 4,
               child: GoogleMapWidget(),
             ),
             const SizedBox(height: 16.0),

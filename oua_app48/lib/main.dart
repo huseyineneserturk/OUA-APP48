@@ -1,7 +1,5 @@
 //İntroduction page
 
-
-
 import 'package:flutter/material.dart';
 import 'package:oua_app48/giris.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
@@ -28,10 +26,10 @@ class IntroductionScreen extends StatefulWidget {
 class _IntroductionScreenState extends State<IntroductionScreen> {
   int _currentIndex = 0;
   final List<String> introImages = [
-    'assets/image1.jpg',
-    'assets/image2.jpg',
-    'assets/image3.jpg',
-    'assets/image4.jpg',
+    'assets/images/image1.png',
+    'assets/images/image2.png',
+    'assets/images/image3.png',
+    'assets/images/image4.png',
   ];
 
   @override
@@ -40,6 +38,7 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
       body: Stack(
         children: <Widget>[
           Swiper(
+            loop: false,
             onIndexChanged: (index) {
               setState(() {
                 _currentIndex = index;
@@ -48,7 +47,10 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
             autoplay: false,
             itemCount: introImages.length,
             itemBuilder: (BuildContext context, int index) {
-              return Image.asset(introImages[index]);
+              return Image.asset(
+                introImages[index],
+                fit: BoxFit.cover,
+              );
             },
             pagination: const SwiperPagination(
               builder: DotSwiperPaginationBuilder(
