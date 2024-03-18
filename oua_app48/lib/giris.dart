@@ -2,10 +2,40 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:oua_app48/kayit.dart';
-import 'package:oua_app48/screens/tab.dart';
 
-class LogInScreen extends StatelessWidget {
-  const LogInScreen({super.key});
+class LogIn extends StatelessWidget {
+  const LogIn({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Giriş Yap',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        textTheme: ThemeData.light().textTheme.copyWith(
+              bodyLarge: const TextStyle(fontWeight: FontWeight.bold),
+              bodyMedium: const TextStyle(fontWeight: FontWeight.bold),
+              displayLarge: const TextStyle(fontWeight: FontWeight.bold),
+              displayMedium: const TextStyle(fontWeight: FontWeight.bold),
+              displaySmall: const TextStyle(fontWeight: FontWeight.bold),
+              headlineMedium: const TextStyle(fontWeight: FontWeight.bold),
+              headlineSmall: const TextStyle(fontWeight: FontWeight.bold),
+              titleLarge: const TextStyle(fontWeight: FontWeight.bold),
+              titleMedium: const TextStyle(fontWeight: FontWeight.bold),
+              titleSmall: const TextStyle(fontWeight: FontWeight.bold),
+              bodySmall: const TextStyle(fontWeight: FontWeight.bold),
+              labelLarge: const TextStyle(fontWeight: FontWeight.bold),
+              labelSmall: const TextStyle(fontWeight: FontWeight.bold),
+            ),
+      ),
+      home: const ProfileCreateScreen(),
+    );
+  }
+}
+
+class ProfileCreateScreen extends StatelessWidget {
+  const ProfileCreateScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -129,12 +159,7 @@ class LogInScreen extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.pushReplacement<void, void>(
-                    context,
-                    MaterialPageRoute<void>(
-                      builder: (BuildContext context) =>  TabsScreen(),
-                    ),
-                  ); 
+                  // Devam et denildiğinde yapılacak işlem.
                 },
               ),
               const SizedBox(height: 10),

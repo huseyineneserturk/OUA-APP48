@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:oua_app48/main.dart';
+import 'package:oua_app48/giris.dart';
 import 'package:oua_app48/screens/tab.dart';
 
 class Kayit extends StatelessWidget {
@@ -51,7 +51,7 @@ class ProfileCreateScreen extends StatelessWidget {
           onPressed: () {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => const MyApp()),
+              MaterialPageRoute(builder: (context) => const LogIn()),
             );
           },
         ),
