@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:oua_app48/giris.dart';
+import 'package:oua_app48/screens/tab.dart';
 
 class Kayit extends StatelessWidget {
   const Kayit({super.key});
@@ -165,7 +166,12 @@ class ProfileCreateScreen extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  // Devam et denildiğinde yapılacak işlem.
+                  Navigator.pushReplacement<void, void>(
+                    context,
+                    MaterialPageRoute<void>(
+                      builder: (BuildContext context) =>  TabsScreen(),
+                    ),
+                  ); 
                 },
               ),
             ],
