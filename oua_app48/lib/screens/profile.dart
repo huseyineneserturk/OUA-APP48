@@ -35,7 +35,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               const SizedBox(height: 20),
               const Text(
-                'Kullanıcı Adı',
+                'Esra Aksoy',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -43,7 +43,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               const SizedBox(height: 10),
               Text(
-                'kullanici@mail.com',
+                'esraaksoy@gmail.com',
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.grey[600],
