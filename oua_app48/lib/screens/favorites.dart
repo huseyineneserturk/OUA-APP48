@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FavoritesPage extends StatelessWidget {
   const FavoritesPage({super.key});
@@ -6,8 +7,9 @@ class FavoritesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 251, 242, 242),
       appBar: AppBar(
-        title: const Text('Favoriler'),
+        title: Text('Favoriler', style: GoogleFonts.gabarito()),
       ),
       body: ListView(
         children: [
@@ -22,8 +24,14 @@ class FavoritesPage extends StatelessWidget {
 
   Widget _buildFavoriteItem(String photographerName) {
     return ListTile(
-      title: Text(photographerName),
-      subtitle: const Text('Favorilere Eklendi'),
+      title: Text(
+        photographerName,
+        style: GoogleFonts.gabarito(),
+      ),
+      subtitle: Text(
+        'Favorilere Eklendi',
+        style: GoogleFonts.gabarito(),
+      ),
       leading: const CircleAvatar(
         child: Icon(Icons.person),
       ),

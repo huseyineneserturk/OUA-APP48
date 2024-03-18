@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ChatPage extends StatelessWidget {
   const ChatPage({super.key});
@@ -6,11 +7,15 @@ class ChatPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 251, 242, 242),
       appBar: AppBar(
-        title: const Text('Mesajlar'),
+        title: Text(
+          'Mesajlar',
+          style: GoogleFonts.gabarito(),
+        ),
       ),
       body: ListView.builder(
-        itemCount: 10, // Örnek için 10 mesaj
+        itemCount: 5, // Örnek için 10 mesaj
         itemBuilder: (BuildContext context, int index) {
           return _buildMessageItem(index);
         },
@@ -20,10 +25,11 @@ class ChatPage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 8.0),
           child: Row(
             children: <Widget>[
-              const Expanded(
+               Expanded(
                 child: TextField(
                   decoration: InputDecoration(
                     hintText: 'Mesajınızı yazın...',
+                    hintStyle: GoogleFonts.gabarito(),
                     border: InputBorder.none,
                   ),
                 ),
@@ -45,7 +51,7 @@ class ChatPage extends StatelessWidget {
     // Örnek mesajlar için rastgele veri oluşturulabilir
     final String sender = index.isEven ? 'Ben' : 'Karşı taraf';
     final String message = 'Örnek mesaj $index';
-    
+
     return ListTile(
       title: Text(sender),
       subtitle: Text(message),

@@ -73,8 +73,8 @@ class _TabsScreenState extends State<TabsScreen> {
           ),
         ],
         currentIndex: _selectedPageIndex,
-        backgroundColor: const Color.fromARGB(255, 241, 72, 33),
-        selectedItemColor: Colors.blue, // Seçili öğenin rengi
+        backgroundColor: const Color.fromARGB(255, 255, 0, 0),
+        selectedItemColor: const Color.fromARGB(255, 255, 0, 0), // Seçili öğenin rengi
         unselectedItemColor: Colors.grey,
         onTap: _selectPage,
       ),

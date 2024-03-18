@@ -6,13 +6,14 @@ class NotificationsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 251, 242, 242),
       appBar: AppBar(
         title: const Text('Bildirimler'),
       ),
       body: ListView.builder(
-        itemCount: 10, // Örnek için 10 bildirim
+        itemCount: 5, 
         itemBuilder: (BuildContext context, int index) {
-          return _buildNotificationItem(index);
+          return _buildNotificationItem(index+1);
         },
       ),
     );
