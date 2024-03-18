@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oua_app48/screens/map.dart';
 import 'package:oua_app48/screens/notification.dart';
 
 class HomePage extends StatelessWidget {
@@ -24,15 +25,24 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const Padding(
+            Container(
               padding: EdgeInsets.all(16.0),
               child: TextField(
                 decoration: InputDecoration(
+                  fillColor: Colors.grey,
                   hintText: 'Lokasyon ara...',
                   prefixIcon: Icon(Icons.search),
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15)
+                  ),
                 ),
               ),
+            ),
+            Container(
+              color: Colors.red,
+              width: MediaQuery.of(context).size.width/1.2,
+              height: MediaQuery.of(context).size.height/6,
+              child: GoogleMapWidget(),
             ),
             GestureDetector(
               onTap: () {
