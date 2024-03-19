@@ -13,6 +13,8 @@ Oyun ve Uygulama Akademisi Game And App Jam etkinliği kapsamında üç gün iç
   -> Güvenlik ve Ödeme Kolaylığı: Uygulamamız, güvenli ödeme yöntemleriyle çalışır ve kullanıcılar arasında iletişimi kolaylaştırır.
 
 İndirme Bağlantısı
+https://drive.google.com/file/d/1ksTQaTUtWo0RwG5m_kENjy7woCPLxLNC/view?usp=sharing
+
 
 Bu uygulama, turistik bölgelerde anı yakalamak isteyen gezginler ve fotoğrafçılar arasında bir köprü kurmayı amaçlar. Hem sizin için unutulmaz anılar yaratırken hem de fotoğrafçılara destek olur. 📷✨
 
