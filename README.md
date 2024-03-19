@@ -15,3 +15,5 @@ Oyun ve Uygulama Akademisi Game And App Jam etkinliği kapsamında üç gün iç
 İndirme Bağlantısı
 
 Bu uygulama, turistik bölgelerde anı yakalamak isteyen gezginler ve fotoğrafçılar arasında bir köprü kurmayı amaçlar. Hem sizin için unutulmaz anılar yaratırken hem de fotoğrafçılara destek olur. 📷✨
+
+Not : İlerleyen süreçte Firebase kullanımıyla daha interaktif bir uygulamaya dönüştürülecektir. :)
