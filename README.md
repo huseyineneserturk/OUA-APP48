@@ -19,3 +19,27 @@ https://drive.google.com/file/d/1ksTQaTUtWo0RwG5m_kENjy7woCPLxLNC/view?usp=shari
 Bu uygulama, turistik bölgelerde anı yakalamak isteyen gezginler ve fotoğrafçılar arasında bir köprü kurmayı amaçlar. Hem sizin için unutulmaz anılar yaratırken hem de fotoğrafçılara destek olur. 📷✨
 
 Not : İlerleyen süreçte Firebase kullanımıyla daha interaktif bir uygulamaya dönüştürülecektir. :)
+
+
+
+[EN]
+
+Game And App Jam event within the framework of the Game and Application Academy, we developed the "SayCheese" draft application within three days.
+
+Content:
+
+📸 SayCheese application is a perfect platform for travelers and photographers who want to take photos in tourist areas. Here's why you should use this app:
+
+-> Find Photographers Instantly: When you suddenly want to take a photo while walking or in a tourist spot, our app shows you the nearest amateur or professional photographers. Capture the moment with just a few clicks!
+
+-> Affordable Prices: You capture your moment and photographers earn income.
+
+-> User Reviews: You can read user reviews of photographers in our app. The experiences of other travelers help you choose the right photographer.
+
+-> Safety and Payment Convenience: Our app works with secure payment methods and facilitates communication between users.
+
+Download Link: https://drive.google.com/file/d/1ksTQaTUtWo0RwG5m_kENjy7woCPLxLNC/view?usp=sharing
+
+This app aims to bridge the gap between travelers who want to capture moments in tourist areas and photographers. It creates unforgettable memories for you while supporting photographers. 📷✨
+
+Note: In the future, it will be transformed into a more interactive application using Firebase. :)
