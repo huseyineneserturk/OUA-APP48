@@ -12,10 +12,6 @@ Oyun ve Uygulama Akademisi Game And App Jam etkinliği kapsamında üç gün iç
   
   -> Güvenlik ve Ödeme Kolaylığı: Uygulamamız, güvenli ödeme yöntemleriyle çalışır ve kullanıcılar arasında iletişimi kolaylaştırır.
 
-İndirme Bağlantısı
-https://drive.google.com/file/d/1ksTQaTUtWo0RwG5m_kENjy7woCPLxLNC/view?usp=sharing
-
-
 Bu uygulama, turistik bölgelerde anı yakalamak isteyen gezginler ve fotoğrafçılar arasında bir köprü kurmayı amaçlar. Hem sizin için unutulmaz anılar yaratırken hem de fotoğrafçılara destek olur. 📷✨
 
 Not : İlerleyen süreçte Firebase kullanımıyla daha interaktif bir uygulamaya dönüştürülecektir. :)
@@ -37,8 +33,6 @@ Content:
 -> User Reviews: You can read user reviews of photographers in our app. The experiences of other travelers help you choose the right photographer.
 
 -> Safety and Payment Convenience: Our app works with secure payment methods and facilitates communication between users.
-
-Download Link: https://drive.google.com/file/d/1ksTQaTUtWo0RwG5m_kENjy7woCPLxLNC/view?usp=sharing
 
 This app aims to bridge the gap between travelers who want to capture moments in tourist areas and photographers. It creates unforgettable memories for you while supporting photographers. 📷✨
 
